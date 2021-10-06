@@ -1,0 +1,58 @@
+.footer {
+  background-image: url(../../images/carousel-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: darken;
+  h5 {
+    font-size: 0.9rem;
+  }
+  &__brand {
+    &-name {
+      font-size: 1rem;
+      margin-bottom: 0;
+    }
+
+    &-tag {
+      font-size: 0.5rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.contact {
+  p {
+    font-size: 0.6rem;
+    margin-bottom: 0;
+  }
+}
+
+.services {
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.location {
+  h3 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.email-notice {
+  margin-top: 0.5rem;
+  font-style: italic;
+}
+
+.subscribe {
+  margin-top: 3rem;
+}

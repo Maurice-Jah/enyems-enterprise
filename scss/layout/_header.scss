@@ -1,0 +1,33 @@
+.navbar {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  &::before {
+    position: absolute;
+    content: "";
+    height: 5rem;
+  }
+}
+
+.nav-link {
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  &:hover {
+    color: #e74c3c !important;
+  }
+}
+
+.gallery {
+  &__img {
+    height: 20rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  color: $color-secondary;
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto Slab", serif;
+}
