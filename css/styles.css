@@ -60,10 +60,6 @@ body {
 .navbar {
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  .navbar::before {
-    position: absolute;
-    content: "";
-    height: 5rem; }
 
 .nav-link {
   color: white !important;
@@ -82,6 +78,11 @@ body {
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+
+body::before {
+  content: "";
+  height: 4rem;
+  display: block; }
 
 .carousel-item {
   position: relative;
@@ -156,3 +157,9 @@ body {
 
 .no-gutters {
   padding: 1px !important; }
+
+.products img {
+  height: 50%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover; }

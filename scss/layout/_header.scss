@@ -1,12 +1,6 @@
 .navbar {
   padding-top: 1rem;
   padding-bottom: 1rem;
-
-  &::before {
-    position: absolute;
-    content: "";
-    height: 5rem;
-  }
 }
 
 .nav-link {
@@ -30,4 +24,10 @@
       object-fit: cover;
     }
   }
+}
+
+body::before {
+  content: "";
+  height: 4rem;
+  display: block;
 }
