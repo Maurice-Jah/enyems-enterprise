@@ -18,7 +18,7 @@ body {
   font-family: "Roboto Slab", serif; }
 
 .footer {
-  background-image: url(../../images/carousel-2.jpg);
+  background-image: url(../images/carousel-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken; }
@@ -159,7 +159,7 @@ body::before {
   padding: 1px !important; }
 
 .about-hero {
-  background-image: url(../../images/bg.jpg);
+  background-image: url(../images/bg.jpg);
   background-size: cover;
   height: 70vh;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 40%, 0 90%);
