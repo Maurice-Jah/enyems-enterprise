@@ -87,23 +87,23 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="">
+      <form action="" method="">
         <div class="mb-3">
           <label for="text" class="form-label">Name:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" name="name">
         </div>
-        <div class="mb-3">
+        <div class="mb-3"> 
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="phone" class="form-label">Phone No.</label>
-          <input type="phone" class="form-control">
+          <input type="phone" class="form-control" name="phone">
         </div>
         <div class="mb-3">
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="textarea" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="Leave a comment here" id="textarea" style="height: 100px" name="comment"></textarea>
             <label for="textarea">Comments</label>
           </div>
         </div>
@@ -203,7 +203,7 @@
 
     <!-- About Section -->
     <section class="about mt-5">
-      <div class="container">
+      <div class="container fade-in">
         <h2 class="text-center text-md-start">About us</h2>
         <p class="mt-3 col-sm-9">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
@@ -219,14 +219,14 @@
       <div class="container">
         <div class="gallery d-sm-flex">
           <div class="row">
-            <div class="gallery__img col-sm-6">
+            <div class="gallery__img col-sm-6 slide-in from-left">
               <img
                 src="images/img-1.jpg"
                 alt="img"
                 class="img-fluid rounded-2 shadow"
               />
             </div>
-            <p class="col-sm-6 mt-3 mt-sm-0">
+            <p class="col-sm-6 mt-3 mt-sm-0 slide-in from-right">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
               libero dis dui vel. Rhoncus egestas eu in scelerisque elit felis,
               diam. Ipsum in viverra amet, metus risus eget. Viverra odio sem
@@ -239,7 +239,7 @@
 
             <!-- row 2 -->
 
-            <p class="col-sm-6 mt-5 order-1 order-sm-0">
+            <p class="col-sm-6 mt-5 order-1 order-sm-0 slide-in from-left">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut
               libero dis dui vel. Rhoncus egestas eu in scelerisque elit felis,
               diam. Ipsum in viverra amet, metus risus eget. Viverra odio sem
@@ -249,7 +249,7 @@
               elit felis, diam. Ipsum in viverra amet, metus risus eget. Viverra
               odio sem eget nulla eu nunc adipiscing.
             </p>
-            <div class="gallery__img col-sm-6 mt-5">
+            <div class="gallery__img col-sm-6 mt-5 slide-in from-right">
               <img
                 src="images/img-2.jpg"
                 alt="img"
@@ -267,8 +267,8 @@
       <h1>Catalog</h1>
       <!-- first row -->
       <div class="catalog row">
-        <div class="col-md-5 d-md-flex shadow p-4 mb-3">
-          <div class="catalog__box col-md-6">
+        <div class="col-md-5 d-md-flex shadow p-4 mb-3 slide-in from-left">
+          <div class="catalog__box col-md-6 ">
             <div class="catalog__box-image">
               <img
                 src="images/img-1.jpg"
@@ -290,7 +290,7 @@
               <div class="d-md-flex align-items-center">
                 <p class="fs-4"><span class="small"> &#8358; </span>20,000</p>
                 <a
-                  href="#"
+                  href="//api.whatsapp.com/send?phone=2348161803849&text=Place order through whatsapp"
                   role="button"
                   class="btn btn-success px-3 fw-bold ms-md-3 mb-3"
                 >
@@ -301,7 +301,7 @@
           </div>
         </div>
 
-        <div class="col-md-5 d-md-flex shadow p-4 mb-3">
+        <div class="col-md-5 d-md-flex shadow p-4 mb-3 slide-in from-right ">
           <div class="catalog__box col-md-6">
             <div class="catalog__box-image">
               <img
@@ -338,7 +338,7 @@
 
       <!-- 2nd row -->
       <div class="catalog row">
-        <div class="col-md-5 d-md-flex shadow p-4 mb-3">
+        <div class="col-md-5 d-md-flex shadow p-4 mb-3 slide-in from-left">
           <div class="catalog__box col-md-6">
             <div class="catalog__box-image">
               <img
@@ -372,7 +372,7 @@
           </div>
         </div>
 
-        <div class="col-md-5 d-md-flex shadow p-4 mb-3">
+        <div class="col-md-5 d-md-flex shadow p-4 mb-3 slide-in from-right">
           <div class="catalog__box col-md-6">
             <div class="catalog__box-image">
               <img
@@ -554,5 +554,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

@@ -1,3 +1,41 @@
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 250ms ease-in;
+  -o-transition: opacity 250ms ease-in;
+  transition: opacity 250ms ease-in; }
+
+.fade-in.appear {
+  opacity: 1; }
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.from-right {
+  -webkit-transform: translateX(50%);
+      -ms-transform: translateX(50%);
+          transform: translateX(50%); }
+
+.from-left,
+.from-right {
+  -webkit-transition: opacity 250ms ease-in, -webkit-transform 1s ease-in;
+  transition: opacity 250ms ease-in, -webkit-transform 1s ease-in;
+  -o-transition: opacity 250ms ease-in, transform 1s ease-in;
+  transition: opacity 250ms ease-in, transform 1s ease-in;
+  transition: opacity 250ms ease-in, transform 1s ease-in, -webkit-transform 1s ease-in;
+  opacity: 0; }
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1; }
+
+body {
+  overflow-x: hidden; }
+
 *,
 *::before,
 *::after {
@@ -89,7 +127,7 @@ body::before {
   max-height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: center; }
 
 .carousel-item::before {
   content: "";
