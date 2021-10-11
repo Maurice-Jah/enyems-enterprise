@@ -144,13 +144,26 @@ body::before {
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%); }
+  @media screen and (max-width: 480px) {
+    .carousel-caption {
+      left: 50%;
+      top: 40%;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); } }
 
 .carousel-caption h5 {
   font-size: 3rem;
   font-weight: 700; }
+  @media screen and (max-width: 480px) {
+    .carousel-caption h5 {
+      font-size: 1.2rem; } }
 
 .carousel-caption p {
   font-size: 18px; }
+  @media screen and (max-width: 480px) {
+    .carousel-caption p {
+      font-size: 0.8rem; } }
 
 .slider-btn .btn-1 {
   background-color: #e74c3c;
@@ -159,6 +172,12 @@ body::before {
   padding: 0.8rem 0.7rem;
   font-size: 1rem;
   margin-top: 1rem; }
+  @media screen and (max-width: 480px) {
+    .slider-btn .btn-1 {
+      border-radius: 4px;
+      padding: 0.4rem 0.3rem;
+      font-size: 0.5rem;
+      margin-top: 0.5rem; } }
 
 .catalog {
   display: -webkit-box;
