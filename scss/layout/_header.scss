@@ -1,13 +1,19 @@
 .navbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  &-brand {
+    img {
+      width: 5rem;
+      display: inline-block;
+      height: auto;
+      object-fit: cover;
+    }
+  }
 }
 
 .nav-link {
-  color: white !important;
   transition: all 0.3s ease-in-out;
   margin-left: 2rem;
   margin-right: 2rem;
+  color: #000 !important;
 
   &:hover {
     color: #e74c3c !important;
@@ -15,6 +21,10 @@
 }
 
 .gallery {
+  p {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
   &__img {
     height: 20rem;
 
@@ -24,10 +34,4 @@
       object-fit: cover;
     }
   }
-}
-
-body::before {
-  content: "";
-  height: 4rem;
-  display: block;
 }

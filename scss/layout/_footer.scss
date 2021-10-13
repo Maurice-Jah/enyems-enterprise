@@ -3,6 +3,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+
+  &__row {
+    padding-top: 5rem;
+  }
+
   h5 {
     font-size: 0.9rem;
   }

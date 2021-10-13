@@ -33,8 +33,21 @@
           transform: translateX(0);
   opacity: 1; }
 
-body {
-  overflow-x: hidden; }
+@-webkit-keyframes moving {
+  0% {
+    right: 0px; }
+  50% {
+    right: 200px; }
+  100% {
+    right: 0px; } }
+
+@keyframes moving {
+  0% {
+    right: 0px; }
+  50% {
+    right: 200px; }
+  100% {
+    right: 0px; } }
 
 *,
 *::before,
@@ -55,11 +68,21 @@ body {
   font-weight: 400;
   font-family: "Roboto Slab", serif; }
 
+body::before {
+  content: "";
+  height: 7rem;
+  display: block; }
+
+body {
+  overflow-x: hidden; }
+
 .footer {
   background-image: url(../images/carousel-2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken; }
+  .footer__row {
+    padding-top: 5rem; }
   .footer h5 {
     font-size: 0.9rem; }
   .footer__brand-name {
@@ -95,19 +118,26 @@ body {
 .subscribe {
   margin-top: 3rem; }
 
-.navbar {
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
+.navbar-brand img {
+  width: 5rem;
+  display: inline-block;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover; }
 
 .nav-link {
-  color: white !important;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   margin-left: 2rem;
-  margin-right: 2rem; }
+  margin-right: 2rem;
+  color: #000 !important; }
   .nav-link:hover {
     color: #e74c3c !important; }
+
+.gallery p {
+  font-size: 1rem;
+  line-height: 2rem; }
 
 .gallery__img {
   height: 20rem; }
@@ -117,14 +147,9 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
 
-body::before {
-  content: "";
-  height: 4rem;
-  display: block; }
-
 .carousel-item {
   position: relative;
-  max-height: 70vh;
+  max-height: 75vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -135,33 +160,22 @@ body::before {
   position: absolute;
   inset: 0;
   background: #000;
-  opacity: 0.7; }
+  opacity: 0.8; }
 
 .carousel-caption {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-  @media screen and (max-width: 480px) {
-    .carousel-caption {
-      left: 50%;
-      top: 40%;
-      -webkit-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%); } }
+  top: 30%; }
 
 .carousel-caption h5 {
   font-size: 3rem;
   font-weight: 700; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     .carousel-caption h5 {
       font-size: 1.2rem; } }
 
 .carousel-caption p {
   font-size: 18px; }
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 600px) {
     .carousel-caption p {
       font-size: 0.8rem; } }
 
@@ -176,8 +190,40 @@ body::before {
     .slider-btn .btn-1 {
       border-radius: 4px;
       padding: 0.4rem 0.3rem;
-      font-size: 0.5rem;
+      font-size: 0.9rem;
       margin-top: 0.5rem; } }
+
+.top-sales {
+  margin-top: 7rem; }
+  .top-sales__header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#993a3a), to(green));
+    background-image: -o-linear-gradient(black, #993a3a, green);
+    background-image: linear-gradient(black, #993a3a, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem;
+    border: solid 1px #ccc;
+    border-bottom: none; }
+    .top-sales__header::after {
+      content: "";
+      background: -webkit-gradient(linear, left top, left bottom, from(red), to(rgba(0, 0, 0, 0)));
+      background: -o-linear-gradient(top, red, rgba(0, 0, 0, 0));
+      background: linear-gradient(to bottom, red, rgba(0, 0, 0, 0));
+      display: block;
+      height: 10px;
+      width: 90%;
+      position: absolute;
+      bottom: 0; }
+  .top-sales p {
+    font-size: 0.7rem !important; }
+  .top-sales p:nth-child(1) {
+    font-size: 1.5rem !important; }
+  .top-sales span {
+    font-size: 1.5rem !important; }
 
 .catalog {
   display: -webkit-box;
@@ -193,14 +239,19 @@ body::before {
       -o-object-fit: cover;
          object-fit: cover; }
 
-.product img {
-  width: 100%;
-  height: 12rem;
-  -o-object-fit: cover;
-     object-fit: cover; }
-
-.product .column-2 {
-  height: 20rem; }
+.product {
+  margin-top: 5rem !important; }
+  .product__heading {
+    -webkit-animation: moving 5s infinite;
+            animation: moving 5s infinite;
+    position: relative; }
+  .product img {
+    width: 100%;
+    height: 12rem;
+    -o-object-fit: cover;
+       object-fit: cover; }
+  .product .column-2 {
+    height: 20rem; }
 
 .image {
   position: relative; }

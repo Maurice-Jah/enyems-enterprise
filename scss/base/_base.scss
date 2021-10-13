@@ -17,3 +17,13 @@ body {
   font-weight: 400;
   font-family: "Roboto Slab", serif;
 }
+
+body::before {
+  content: "";
+  height: 7rem;
+  display: block;
+}
+
+body {
+  overflow-x: hidden;
+}

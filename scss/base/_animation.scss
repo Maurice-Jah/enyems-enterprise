@@ -27,6 +27,15 @@
   opacity: 1;
 }
 
-body {
-  overflow-x: hidden;
+@keyframes moving {
+  0% {
+    right: 0px;
+  }
+  50% {
+    right: 200px;
+  }
+
+  100% {
+    right: 0px;
+  }
 }
