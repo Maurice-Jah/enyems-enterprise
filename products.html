@@ -44,12 +44,12 @@
     <title>Enyems Enterprise</title>
   </head>
   <body>
-    <!-- NavBar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
-      <div class="container">
-        <a href="#" class="navbar-brand">Enyems Enterprises</a>
+     <!-- NavBar -->
+     <nav class="navbar navbar-expand-md bg-light navbar-dark  fixed-top">
+      <div class="container ">
+        <a href="index.html" class="navbar-brand text-dark"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler bg-primary"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navmenu"
@@ -57,15 +57,15 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto text-center">
             <li class="nav-item">
-              <a href="index.html" class="nav-link">Home</a>
+              <a href="index.html" class="nav-link ">Home</a>
             </li>
             <li class="nav-item">
               <a href="about.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Products</a>
+              <a href="products.html" class="nav-link">Products</a>
             </li>
             <li class="nav-item" data-bs-toggle="modal" data-bs-target="#contactModal">
               <a href="#contactModal" class="nav-link">Contact</a>
@@ -87,23 +87,23 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="">
+      <form action="" method="">
         <div class="mb-3">
           <label for="text" class="form-label">Name:</label>
-          <input type="text" class="form-control">
+          <input type="text" class="form-control" name="name">
         </div>
-        <div class="mb-3">
+        <div class="mb-3"> 
           <label for="email" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="email">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
           <label for="phone" class="form-label">Phone No.</label>
-          <input type="phone" class="form-control">
+          <input type="phone" class="form-control" name="phone">
         </div>
         <div class="mb-3">
           <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="textarea" style="height: 100px"></textarea>
+            <textarea class="form-control" placeholder="Leave a comment here" id="textarea" style="height: 100px" name="comment"></textarea>
             <label for="textarea">Comments</label>
           </div>
         </div>
@@ -113,10 +113,12 @@
               <button type="submit" class="btn btn-primary">Send</button>
             </div>
           </form>
-          <p class="pt-4 fs-6 text-center"> <small> Call us on: 0909235667 <small> </small></p>
+          <p class="pt-4 fs-6 text-center"> <small> Call us on: +234 9133190028 or +234 8133780424 <small> </small></p>
     </div>
   </div>
 </div>
+
+    <!-- ends here -->
 
 <!-- Body Section -->
   <section class="products" >
