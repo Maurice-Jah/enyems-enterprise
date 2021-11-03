@@ -48,3 +48,33 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section-hidden");
 });
+
+//========================== For the reveal on scroll for products=====================================
+const images = document.querySelectorAll("[data-src]");
+
+const imgOptions = {
+  threshold: 0.2,
+};
+
+function preloadImage(img) {
+  const src = img.getAttribute("data-src");
+  if (!src) {
+    return;
+  }
+  img.src = src;
+}
+
+const imgObserver = new IntersectionObserver((entries, imgObserver) => {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      preloadImage(entry.target);
+      imgObserver.unobserve(entry.target);
+    }
+  });
+}, imgOptions);
+
+images.forEach((image) => {
+  imgObserver.observe(image);
+});
