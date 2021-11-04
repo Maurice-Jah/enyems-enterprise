@@ -2,7 +2,7 @@
   0% {
     right: 0px; }
   50% {
-    right: 200px; }
+    right: 150px; }
   100% {
     right: 0px; } }
 
@@ -10,7 +10,7 @@
   0% {
     right: 0px; }
   50% {
-    right: 200px; }
+    right: 150px; }
   100% {
     right: 0px; } }
 
@@ -103,6 +103,9 @@ body {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover; }
+  @media only screen and (max-width: 25em) {
+    .navbar-brand img {
+      width: 2rem; } }
 
 .nav-link {
   -webkit-transition: all 0.3s ease-in-out;
@@ -229,8 +232,14 @@ body {
     height: 12rem;
     -o-object-fit: cover;
        object-fit: cover; }
+    @media only screen and (max-width: 25em) {
+      .product img {
+        height: 8rem; } }
   .product .column-2 {
     height: 20rem; }
+    @media only screen and (max-width: 25em) {
+      .product .column-2 {
+        height: 8rem; } }
 
 .image {
   position: relative; }
